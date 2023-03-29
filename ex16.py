@@ -14,8 +14,11 @@ numeros = minha_lista
 
 lista_com_duplicatas = []
 
-for numero in numeros:
-    if numeros.count(val) > 1 and numero not in lista_com_duplicatas:
-        lista_com_duplicatas.append(numeros)
-    
-print(lista_com_duplicatas) 
+numeros_repetidos = []
+
+
+for num in numeros:
+    if numeros.count(num) > 1 and num not in numeros_repetidos:
+        numeros_repetidos.append(num)
+
+print(numeros_repetidos) 
